@@ -5,23 +5,24 @@ import { css } from "@stitches/react";
 
 import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import backgroundImgRed from "@/public/static/img/backgroudRed/20215.jpg";
 
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$grey1",
+  backgroundColor: "$brand2",
   padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${backgroundImg})`,
+  backgroundImage: `url(${backgroundImgRed})`,
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "right",
+  backgroundPosition: "right 9%",
   backgroundAttachment: "fixed",
-  borderBottom: "2px solid $grey5",
+  borderBottom: "2px solid $brand2",
   "@tablet": {
-    backgroundPosition: "right -10% center",
+    backgroundPosition: "right 4%",
   },
   "@mobile": {
     padding: "9rem 0 6rem 0",
-    backgroundImage: `none`,
+    backgroundPosition: "right 1%",
   },
   "@mobileLittle": {
     padding: "9rem 0 0 0",
@@ -32,12 +33,14 @@ export const HeaderContent = styled("div", {
   maxWidth: "100%",
   width: "36rem",
   display: "flex",
-  flexDirection: "column",
-  gap: "$2",
+  alignItems: "center",
+  gap: "$5",
   "@tablet": {
+    flexDirection: "column",
     width: "36rem",
   },
   "@mobile": {
+    flexDirection: "column",
     width: "100%",
   },
 });

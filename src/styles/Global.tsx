@@ -17,7 +17,7 @@ export const Container = styled("div", {
 
 export const Flex = styled("div", {
   display: "flex",
-  gap: "$1",
+  gap: "$2",
   alignItems: "center",
 });
 
@@ -84,8 +84,8 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
 
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
+      brand1: "#ff0000",
+      brand2: "#982323",
 
       grey0: "#0A0A0B",
       grey1: "#121214",

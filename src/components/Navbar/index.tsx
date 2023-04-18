@@ -14,6 +14,7 @@ import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
+import { UserImage } from "@/pages/home/style";
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -37,6 +38,13 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
+            <UserImage
+                  src={`https://github.com/${userData.githubUser}.png`}
+                  alt={userData.nameUser}
+                  title={userData.nameUser}
+                  width={"48px"}
+                  height={"48px"}
+                />
             <LogoTipoText>{userData.nameUser}</LogoTipoText>
           </LogoTipo>
           {isWide && (
